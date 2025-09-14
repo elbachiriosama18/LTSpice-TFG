@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TFG.ControladorScene3">
+   <children>
+      <TextArea fx:id="consola" layoutX="25.0" layoutY="83.0" prefHeight="259.0" prefWidth="301.0" />
+      <ImageView fitHeight="142.0" fitWidth="196.0" layoutX="332.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Captura%20(63).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="103.0" layoutX="535.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Captura%20(64).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="42.0" text="Functions &amp; param">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

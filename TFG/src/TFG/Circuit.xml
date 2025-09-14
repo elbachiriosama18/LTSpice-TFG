@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<circuito>	
+	<name ID="fig1"></name>
+	<description></description>
+	
+	<current>
+		<value>ddt(V(x))</value>
+		<nodoA>0</nodoA>
+		<nodoB>x</nodoB>
+	</current>
+	
+	<current>
+		<value>V(v)</value>
+		<nodoA>x</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+	
+	<current>
+		<value>m*ddt(V(v))</value>
+		<nodoA>0</nodoA>
+		<nodoB>v</nodoB>
+	</current>
+	
+	<current>
+		<value>-k*V(x)-g*V(v)</value>
+		<nodoA>v</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+	
+	
+	<TranAnalysis>
+		<Tstep>0</Tstep>
+		<Tstop>5</Tstop>
+		<Tstart>0</Tstart>
+		<UIC>1e-4</UIC>
+	</TranAnalysis>	
+	
+	<StepParameters>
+		<nameParam>g</nameParam>
+		<inicalValue>0</inicalValue>
+		<finalValue>10</finalValue>
+		<increment>1</increment>
+	</StepParameters>	
+	
+	<Parameters>
+		<nameParam>k</nameParam>
+		<Value>10</Value>
+	</Parameters>
+	
+	<Parameters>
+		<nameParam>m</nameParam>
+		<Value>1</Value>
+	</Parameters>
+	
+	
+	
+	<initialConditions>
+		<Vx>V(x)=1</Vx>
+	</initialConditions>
+	
+	<initialConditions>
+		<Vx>V(v)=0</Vx>
+	</initialConditions>
+
+</circuito>
