@@ -1,0 +1,36 @@
+
+\begin{tcolorbox}[title=Atenció, colframe=colorTFG, colbacktitle=colorTFG]
+Llevat que el tutor no indiqui el contrari, la memòria del TFG no s'ha d'entregar en paper. Per tant, les indicacions del apartats \ref{ap:paper} i \ref{ap:enq} sols s'han de considerar en casos excepcionals.
+\end{tcolorbox}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.15\linewidth]{LogoUIB.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|l}
+       1  &  2\\
+       3  & 4 \\ \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+\section{Acrònims}
+
+\ac{IP}.
+\ac{EPS}
+\ac{JVM}
+\ac{SPICE}
+\ac{ODE}
+\ac{PDE}
+\ac{AC}
+\ac{DC}
+\ac{PCF}
+
+% Aquesta sentencia ens permetrà generar una entrada a la llista d'acrònims.
+% En la llista d'acrònims es definiran cada un dels acronims i mitjançant l'expressió anterior podrem referenciar-los.

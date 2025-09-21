@@ -1,0 +1,8 @@
+*simulacion
+B1 0 x I=ddt(V(x))
+B2 x 0 I=10*V(x)*(1-delay(V(x),tau))
+.tran 0 3 0 1e-4
+.step param tau 0.001 0.2 0.01
+.ic V(x)=0.1
+.backanno
+.end

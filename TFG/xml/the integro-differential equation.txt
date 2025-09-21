@@ -1,0 +1,44 @@
+<circuito>
+	<name ID="fig1"></name>
+	<description></description>
+	
+	<current>
+		<value>2*exp(-3*time)+4*exp(-2*time)-exp(-time)</value>
+		<nodoA>0</nodoA>
+		<nodoB>x</nodoB>
+	</current>
+	
+	<current>
+		<value>ddt(V(x))+3*V(x)+2*idt(V(x))</value>
+		<nodoA>x</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+
+	<voltage>
+		<value>-3*exp(-3*time)+4*exp(-2*time)-exp(-time)</value>
+		<nodoA>y</nodoA>
+		<nodoB>0</nodoB>
+	</voltage>
+
+	<TranAnalysis>
+		<Tstep>0</Tstep>
+		<Tstop>6</Tstop>
+		<Tstart>0</Tstart>
+		<UIC>1e-3</UIC>
+	</TranAnalysis>	
+	
+	<StepParameters>
+		<nameParam>x0</nameParam>
+		<inicalValue>-0.5</inicalValue>
+		<finalValue>0.5</finalValue>
+		<increment>0.1</increment>
+	</StepParameters>	
+		
+	<initialConditions>
+		<Vx>V(x)=x0</Vx>
+	</initialConditions>
+	
+
+
+
+</circuito>

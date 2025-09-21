@@ -1,0 +1,29 @@
+	<current>
+		<value>ddt(V(x))</value>
+		<nodoA>0</nodoA>
+		<nodoB>x</nodoB>
+	</current>
+	
+	<current>
+		<value>10*V(x)*(1-delay(V(x),tau))</value>ddt(V(x))+3*V(x)+2*idt(V(x))>
+		<nodoA>x</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+
+	<TranAnalysis>
+		<Tstep>0</Tstep>
+		<Tstop>3</Tstop>
+		<Tstart>0</Tstart>
+		<UIC>1e-4</UIC>
+	</TranAnalysis>	
+	
+	<StepParameters>
+		<nameParam>tau</nameParam>
+		<inicalValue>0.001</inicalValue>
+		<finalValue>0.2</finalValue>
+		<increment>0.01</increment>
+	</StepParameters>	
+		
+	<initialConditions>
+		<Vx>V(x)=0.1</Vx>
+	</initialConditions>
