@@ -1,0 +1,82 @@
+<circuito>
+	<name ID="fig1"></name>
+	<description></description>
+	
+	<current>
+		<value>ddt(V(x))</value>
+		<nodoA>0</nodoA>
+		<nodoB>x</nodoB>
+	</current>
+	
+	<current>
+		<value>a*V(x)-b*V(x)*V(y)</value>
+		<nodoA>x</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+	
+	<current>
+		<value>ddt(V(y))</value>
+		<nodoA>0</nodoA>
+		<nodoB>y</nodoB>
+	</current>
+	
+	<current>
+		<value>-c*V(y)+d*V(x)*V(y)</value>
+		<nodoA>y</nodoA>
+		<nodoB>0</nodoB>
+	</current>
+	
+	<voltage>
+		<value></value>
+		<nodoA></nodoA>
+		<nodoB></nodoB>
+	</voltage>
+	
+	<TranAnalysis>
+		<Tstep>0</Tstep>
+		<Tstop>20</Tstop>
+		<Tstart>0</Tstart>
+		<UIC>1e-4</UIC>
+	</TranAnalysis>	
+	
+	<StepParameters>
+		<nameParam>x0</nameParam>
+		<inicalValue>5</inicalValue>
+		<finalValue>20</finalValue>
+		<increment>2</increment>
+	</StepParameters>	
+	
+	<Parameters>
+		<nameParam>a</nameParam>
+		<Value>1.5</Value>
+	</Parameters>
+	
+	<Parameters>
+		<nameParam>b</nameParam>
+		<Value>1</Value>
+	</Parameters>
+	
+	<Parameters>
+		<nameParam>c</nameParam>
+		<Value>3</Value>
+	</Parameters>
+	
+	<Parameters>
+		<nameParam>d</nameParam>
+		<Value>1</Value>
+	</Parameters>
+	
+	<function>
+	</function>
+	
+	<initialConditions>
+		<Vx>V(x)={x0}</Vx>
+	</initialConditions>
+	
+	<initialConditions>
+		<Vx>V(y)=5</Vx>
+	</initialConditions>
+	
+
+
+</circuito>
